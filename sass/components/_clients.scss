@@ -1,0 +1,31 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+.clients > .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $clients-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+.clients-icon {
+  fill: $clients-color;
+
+  transition: fill 250ms $timing-function;
+
+  .clients > .item:hover &,
+  .clients > .item:focus & {
+    fill: $accent-color;
+  }
+}

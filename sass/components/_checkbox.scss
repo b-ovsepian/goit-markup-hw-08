@@ -1,0 +1,27 @@
+.checkbox {
+  appearance: none;
+
+  position: relative;
+}
+.checkbox-svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: transform 250ms $timing-function;
+
+  .checkbox:checked + & {
+    content: "";
+
+    background-image: url("../images/check.svg");
+    background-size: contain;
+    background-origin: border-box;
+
+    border-radius: 2px;
+    border-color: transparent;
+
+    fill: $accent-color;
+    background-color: #2196f3;
+  }
+}

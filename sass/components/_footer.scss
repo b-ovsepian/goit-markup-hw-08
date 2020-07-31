@@ -1,0 +1,22 @@
+.footer {
+  padding-top: 45px;
+  color: $primary-bg-color;
+  background-color: $footer-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  .title {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+}
+.page-footer {
+  display: flex;
+  align-items: baseline;
+}

@@ -1,0 +1,38 @@
+.section {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &:nth-child(2) {
+    padding-bottom: 0;
+  }
+  &:nth-child(4) {
+    background-color: $portfolio-bg-color;
+  }
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.section .title {
+  margin-top: 0;
+  color: $primary-bg-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

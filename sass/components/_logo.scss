@@ -1,0 +1,25 @@
+.logo {
+  display: block;
+  margin-right: 85px;
+
+  font-family: Raleway, sans-serif;
+  color: $title-text-color;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  > .element {
+    color: $accent-color;
+  }
+
+  &.footer {
+    @extend .logo;
+    margin-bottom: 8px;
+    margin-right: 0;
+    padding: 0;
+
+    color: $primary-bg-color;
+  }
+}

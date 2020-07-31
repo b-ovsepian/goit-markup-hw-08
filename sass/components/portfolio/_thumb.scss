@@ -1,0 +1,28 @@
+.thumb {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(+100%);
+
+    transition: transform 500ms $timing-function;
+  }
+
+  &-title {
+    padding: 24px 20px;
+    background: $primary-bg-color;
+    border: 1px solid $element-color;
+  }
+
+  .portfolio > .element:hover &::before,
+  .portfolio > .element:focus &::before {
+    transform: translateY(0);
+  }
+}
