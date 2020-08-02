@@ -9,7 +9,14 @@
   letter-spacing: 0.03em;
 
   &:nth-child(2) {
-    padding-bottom: 0;
+    @media screen and(min-width: $laptop) {
+      padding-bottom: 0;
+    }
+  }
+  &:nth-child(3) {
+    @media screen and (max-width: $laptop - 1px) {
+      display: none;
+    }
   }
   &:nth-child(4) {
     background-color: $portfolio-bg-color;
@@ -22,10 +29,14 @@
 
   color: $title-text-color;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 36px;
+  }
 }
 .section .title {
   margin-top: 0;

@@ -1,3 +1,8 @@
 .address {
-  margin-right: 69px;
+  @media screen and (max-width: $tablet - 1px) {
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: $tablet) {
+    margin-right: 69px;
+  }
 }

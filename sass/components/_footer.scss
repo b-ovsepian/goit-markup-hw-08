@@ -1,5 +1,9 @@
 .footer {
-  padding-top: 45px;
+  padding-top: 60px;
+  @media screen and (max-width: $laptop - 1px) {
+    padding-bottom: 60px;
+  }
+
   color: $primary-bg-color;
   background-color: $footer-color;
   font-weight: 400;
@@ -17,6 +21,16 @@
   }
 }
 .page-footer {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: $tablet - 1px) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and (min-width: $tablet) and(max-width: $laptop - 1px) {
+    flex-wrap: wrap;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }

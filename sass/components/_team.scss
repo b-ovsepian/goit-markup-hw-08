@@ -1,8 +1,18 @@
 .team {
-  display: flex;
-  justify-content: space-between;
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    margin: -15px;
+  }
+  @media screen and(min-width: $tablet) and (max-width: $laptop - 1px) {
+    flex-wrap: wrap;
+  }
+  @media screen and(min-width: $laptop) {
+    justify-content: space-between;
+  }
 
   &-img {
+    width: 100%;
+
     margin-top: 0;
     margin-bottom: 30px;
   }
@@ -12,7 +22,20 @@
   }
 }
 .team > .card {
-  width: 270px;
+  @media screen and(min-width: $tablet) and (max-width: $laptop - 1px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and(min-width: $laptop) {
+    width: 270px;
+  }
+
+  &:not(:last-child) {
+    @media screen and(max-width: $tablet - 1px) {
+      margin-bottom: 30px;
+    }
+  }
+
   padding-bottom: 24px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);

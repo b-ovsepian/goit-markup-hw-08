@@ -19,6 +19,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  @media screen and(max-width: $laptop - 1px) {
+    min-width: 360px;
+  }
+
   transform: translate(-50%, -50%);
 }
 .hero-title {
@@ -27,8 +31,12 @@
 
   color: $primary-bg-color;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and(min-width: $laptop) {
+    font-size: 44px;
+  }
 }

@@ -1,5 +1,11 @@
 .join {
   margin-top: 0;
+  @media screen and (max-width: $tablet - 1px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $laptop - 1px) {
+    margin-left: auto;
+  }
 
   &-item:not(:last-child) {
     margin-right: 10px;

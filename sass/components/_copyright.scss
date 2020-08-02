@@ -6,4 +6,8 @@
   line-height: 2;
   letter-spacing: 0.03em;
   text-align: center;
+
+  @media screen and (max-width: $laptop - 1px) {
+    display: none;
+  }
 }

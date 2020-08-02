@@ -4,7 +4,12 @@
 
   font-family: Raleway, sans-serif;
   color: $title-text-color;
-  font-size: 26px;
+  font-size: 24px;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 26px;
+  }
+
   font-weight: 700;
   text-decoration: none;
   line-height: 1.2;
