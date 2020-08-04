@@ -2,7 +2,10 @@
   @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 60px;
   }
-  @media screen and(min-width: $tablet) {
+  @media screen and (max-width: $laptop - 1px) {
+    text-align: center;
+  }
+  @media screen and(min-width: $laptop) {
     margin-right: 69px;
   }
 }

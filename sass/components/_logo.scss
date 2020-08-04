@@ -1,13 +1,13 @@
 .logo {
   display: block;
-  margin-right: 85px;
 
   font-family: Raleway, sans-serif;
   color: $title-text-color;
   font-size: 24px;
 
-  @media screen and (min-width: $laptop) {
+  @media screen and (min-width: $tablet) {
     font-size: 26px;
+    margin-right: 85px;
   }
 
   font-weight: 700;

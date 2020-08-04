@@ -56,3 +56,26 @@
     background-image: url("../images/iconsend.svg");
   }
 }
+.menu-button {
+  display: none;
+  @media screen and (max-width: $tablet - 1px) {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &.is-open .icon-menu {
+      display: none;
+    }
+    &.is-open .icon-close {
+      display: block;
+    }
+    &:hover .icon-menu,
+    &:hover .icon-close,
+    &:focus .icon-menu,
+    &:focus .icon-close {
+      fill: $accent-color;
+    }
+  }
+}

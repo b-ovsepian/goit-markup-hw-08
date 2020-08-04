@@ -8,6 +8,12 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
+  &#filter-section {
+    @media screen and(max-width: $tablet - 1px) {
+      padding-top: 60px;
+    }
+  }
+
   &:nth-child(2) {
     @media screen and(min-width: $laptop) {
       padding-bottom: 0;

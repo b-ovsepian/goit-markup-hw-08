@@ -1,23 +1,40 @@
 .cont-nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  @media screen and(max-width: $tablet - 1px) {
+    .item:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  @media screen and(min-width: $tablet) and(max-width: $laptop - 1px) {
+    .item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and(min-width: $laptop) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    .item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 
   img {
     display: inline;
   }
 }
 
-.cont-nav .item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .cont-nav .link {
+  @media screen and(min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
   color: $primary-text-color;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 
   transition: color 250ms $timing-function;
@@ -32,8 +49,8 @@
   margin: 0;
   fill: $primary-text-color;
 
-  .cont-nav:hover &,
-  .cont-nav:focus & {
+  .cont-nav .link:hover &,
+  .cont-nav .link:focus & {
     fill: $accent-color;
   }
 }

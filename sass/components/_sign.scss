@@ -1,7 +1,14 @@
 .sign {
   margin-left: auto;
+  @media screen and (min-width: $tablet) and (max-width: $laptop - 1px) {
+    margin-top: 60px;
+    margin-right: auto;
+  }
 
   > .title {
     margin-top: 0;
+    @media screen and (min-width: $tablet) and (max-width: $laptop - 1px) {
+      text-align: center;
+    }
   }
 }
