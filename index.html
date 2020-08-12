@@ -127,34 +127,73 @@
           <ul class="work list">
             <li class="item">
               <a href="">
-                <img
-                  src="./images/nout.jpg"
-                  width="370"
-                  height="294"
-                  alt="ноутбук"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/desktop/desktop.webp    370w,
+                      ./images/work/desktop/desktop@2x.webp 740w
+                    "
+                    sizes="370px"
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/work/desktop/desktop.webp    370w,
+                      ./images/work/desktop/desktop@2x.webp 740w
+                    "
+                    sizes="370px"
+                    src="./images/work/desktop/desktop.jpg"
+                    alt="ноутбук"
+                  />
+                </picture>
                 <h3 class="title">Десктопные приложения</h3>
               </a>
             </li>
             <li class="item">
               <a href="">
-                <img
-                  src="./images/phone.jpg"
-                  width="370"
-                  height="294"
-                  alt="телефон"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/phone/phone.webp    370w,
+                      ./images/work/phone/phone@2x.webp 740w
+                    "
+                    sizes="370px"
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/work/phone/phone.webp    370w,
+                      ./images/work/phone/phone@2x.webp 740w
+                    "
+                    sizes="370px"
+                    src="./images/work/phone/phone.jpg"
+                    alt="телефон"
+                  />
+                </picture>
                 <h3 class="title">Мобильные приложения</h3>
               </a>
             </li>
             <li class="item">
               <a href="">
-                <img
-                  src="./images/pc.jpg"
-                  width="370"
-                  height="294"
-                  alt="компьютер"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/design/design.webp    370w,
+                      ./images/work/design/design@2x.webp 740w
+                    "
+                    sizes="370px"
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/work/design/design.webp    370w,
+                      ./images/work/design/design@2x.webp 740w
+                    "
+                    sizes="370px"
+                    src="./images/work/design/design.jpg"
+                    alt="дизайн"
+                  />
+                </picture>
                 <h3 class="title">Дизайнерские решения</h3>
               </a>
             </li>
@@ -167,13 +206,34 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
             <li class="card">
-              <img
-                src="./images/portrait1.jpg"
-                class="team-img"
-                width="270"
-                height="260"
-                alt="Николай Кучеренко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/nick/nick-mobile.webp    450w,
+                    ./images/team/nick/nick-mobile@2x.webp 900w,
+                    ./images/team/nick/nick-tablet.webp    354w,
+                    ./images/team/nick/nick-tablet@2x.webp 708w,
+                    ./images/team/nick/nick-laptop.webp    270w,
+                    ./images/team/nick/nick-laptop@2x.webp 540w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1230px) 270px, (min-width: 768px) 354px, 450px"
+                />
+                <img
+                  srcset="
+                    ./images/team/nick/nick-mobile.jpg    450w,
+                    ./images/team/nick/nick-mobile@2x.jpg 900w,
+                    ./images/team/nick/nick-tablet.jpg    354w,
+                    ./images/team/nick/nick-tablet@2x.jpg 708w,
+                    ./images/team/nick/nick-laptop.jpg    270w,
+                    ./images/team/nick/nick-laptop@2x.jpg 540w
+                  "
+                  src="./images/team/nick/nick-mobile.jpg"
+                  class="team-img"
+                  alt="Николай Кучеренко"
+                  sizes="(min-width: 1230px) 270px, (min-width: 768px) 354px, 450px"
+                />
+              </picture>
               <h3 class="team-title">Николай Кучеренко</h3>
               <p class="team-special">Product Designer</p>
               <ul class="social-list">
@@ -222,13 +282,34 @@
               </ul>
             </li>
             <li class="card">
-              <img
-                src="./images/portrait2.jpg"
-                class="team-img"
-                width="270"
-                height="260"
-                alt="Ольга Иванова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/olga/olga-mobile.webp    450w,
+                    ./images/team/olga/olga-mobile@2x.webp 900w,
+                    ./images/team/olga/olga-tablet.webp    354w,
+                    ./images/team/olga/olga-tablet@2x.webp 708w,
+                    ./images/team/olga/olga-laptop.webp    270w,
+                    ./images/team/olga/olga-laptop@2x.webp 540w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1230px) 270px, (min-width: 768px) 354px, 450px"
+                />
+                <img
+                  srcset="
+                    ./images/team/olga/olga-mobile.jpg    450w,
+                    ./images/team/olga/olga-mobile@2x.jpg 900w,
+                    ./images/team/olga/olga-tablet.jpg    354w,
+                    ./images/team/olga/olga-tablet@2x.jpg 708w,
+                    ./images/team/olga/olga-laptop.jpg    270w,
+                    ./images/team/olga/olga-laptop@2x.jpg 540w
+                  "
+                  src="./images/team/olga/olga-mobile.jpg"
+                  class="team-img"
+                  alt="Ольга Иванова"
+                  sizes="(min-width: 1230px) 270px, (min-width: 768px) 354px, 450px"
+                />
+              </picture>
               <h3 class="team-title">Ольга Иванова</h3>
               <p class="team-special">Frontend Developer</p>
               <ul class="social-list">
@@ -277,13 +358,34 @@
               </ul>
             </li>
             <li class="card">
-              <img
-                src="./images/portrait3.jpg"
-                class="team-img"
-                width="270"
-                height="260"
-                alt="Андрей Шевченко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/andrei/andrei-mobile.webp    450w,
+                    ./images/team/andrei/andrei-mobile@2x.webp 900w,
+                    ./images/team/andrei/andrei-tablet.webp    354w,
+                    ./images/team/andrei/andrei-tablet@2x.webp 708w,
+                    ./images/team/andrei/andrei-laptop.webp    270w,
+                    ./images/team/andrei/andrei-laptop@2x.webp 540w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1230px) 270px, (min-width: 768px) 354px, 450px"
+                />
+                <img
+                  srcset="
+                    ./images/team/andrei/andrei-mobile.jpg    450w,
+                    ./images/team/andrei/andrei-mobile@2x.jpg 900w,
+                    ./images/team/andrei/andrei-tablet.jpg    354w,
+                    ./images/team/andrei/andrei-tablet@2x.jpg 708w,
+                    ./images/team/andrei/andrei-laptop.jpg    270w,
+                    ./images/team/andrei/andrei-laptop@2x.jpg 540w
+                  "
+                  src="./images/team/andrei/andrei-mobile.jpg"
+                  class="team-img"
+                  alt="Андрей Шевченко"
+                  sizes="(min-width: 1230px) 270px, (min-width: 768px) 354px, 450px"
+                />
+              </picture>
               <h3 class="team-title">Андрей Шевченко</h3>
               <p class="team-special">Marketing</p>
               <ul class="social-list">
@@ -332,13 +434,34 @@
               </ul>
             </li>
             <li class="card">
-              <img
-                src="./images/portrait4.jpg"
-                class="team-img"
-                width="270"
-                height="260"
-                alt="Иван Николаев"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/ivan/ivan-mobile.webp    450w,
+                    ./images/team/ivan/ivan-mobile@2x.webp 900w,
+                    ./images/team/ivan/ivan-tablet.webp    354w,
+                    ./images/team/ivan/ivan-tablet@2x.webp 708w,
+                    ./images/team/ivan/ivan-laptop.webp    270w,
+                    ./images/team/ivan/ivan-laptop@2x.webp 540w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1230px) 270px, (min-width: 768px) 354px, 450px"
+                />
+                <img
+                  srcset="
+                    ./images/team/ivan/ivan-mobile.jpg    450w,
+                    ./images/team/ivan/ivan-mobile@2x.jpg 900w,
+                    ./images/team/ivan/ivan-tablet.jpg    354w,
+                    ./images/team/ivan/ivan-tablet@2x.jpg 708w,
+                    ./images/team/ivan/ivan-laptop.jpg    270w,
+                    ./images/team/ivan/ivan-laptop@2x.jpg 540w
+                  "
+                  src="./images/team/ivan/ivan-mobile.jpg"
+                  class="team-img"
+                  alt="Иван Николаев"
+                  sizes="(min-width: 1230px) 270px, (min-width: 768px) 354px, 450px"
+                />
+              </picture>
               <h3 class="team-title">Иван Николаев</h3>
               <p class="team-special">UI Designer</p>
               <ul class="social-list">
@@ -397,7 +520,6 @@
             <li class="item">
               <a href="" class="clients-link">
                 <svg class="clients-icon" width="44.27" height="49.23">
-                  >
                   <use href="./images/sprite.svg#iconclient1"></use>
                 </svg>
               </a>
@@ -405,7 +527,6 @@
             <li class="item">
               <a href="">
                 <svg class="clients-icon" width="40" height="52">
-                  >
                   <use href="./images/sprite.svg#iconclient2"></use>
                 </svg>
               </a>
@@ -413,7 +534,6 @@
             <li class="item">
               <a href="">
                 <svg class="clients-icon" width="41" height="42.6">
-                  >
                   <use href="./images/sprite.svg#iconclient3"></use>
                 </svg>
               </a>
@@ -421,7 +541,6 @@
             <li class="item">
               <a href="">
                 <svg class="clients-icon" width="79.66" height="42.02">
-                  >
                   <use href="./images/sprite.svg#iconclient4"></use>
                 </svg>
               </a>
@@ -429,7 +548,6 @@
             <li class="item">
               <a href="">
                 <svg class="clients-icon" width="59" height="47">
-                  >
                   <use href="./images/sprite.svg#iconclient5"></use>
                 </svg>
               </a>
@@ -437,7 +555,6 @@
             <li class="item">
               <a href="">
                 <svg class="clients-icon" width="88.48" height="45.44">
-                  >
                   <use href="./images/sprite.svg#iconclient6"></use>
                 </svg>
               </a>
@@ -589,7 +706,7 @@
                 placeholder="E-mail"
                 name="email"
                 required="required"
-                id="email"
+                id="sign-email"
               />
               <button class="button secondary" type="submit">
                 Подписаться
