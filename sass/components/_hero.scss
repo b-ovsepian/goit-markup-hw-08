@@ -1,19 +1,84 @@
 .hero {
   position: relative;
   text-align: center;
+
   max-width: 1600px;
-  height: 600px;
+
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url("../images/hero.jpg");
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: $laptop) {
+  .hero {
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../../images/hero/hero-laptop.jpg");
+  }
+}
+@media screen and (min-width: $laptop) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $laptop) and (min-resolution: 192dpi),
+  screen and (min-width: $laptop) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../../images/hero/hero-laptop@2x.jpg");
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $laptop - 1px) {
+  .hero {
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../../images/hero/hero-tablet.jpg");
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $laptop - 1px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $tablet) and (max-width: $laptop - 1px) and (min-resolution: 192dpi),
+  screen and (min-width: $tablet) and (max-width: $laptop - 1px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../../images/hero/hero-tablet@2x.jpg");
+  }
+}
+@media screen and (max-width: $tablet - 1px) {
+  .hero {
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../../images/hero/hero-mobile.jpg");
+  }
+}
+@media screen and (max-width: $tablet - 1px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: $tablet - 1px) and (min-resolution: 192dpi),
+  screen and (max-width: $tablet - 1px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../../images/hero/hero-mobile@2x.jpg");
+  }
 }
 .hero-actions {
   position: absolute;
