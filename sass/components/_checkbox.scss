@@ -6,7 +6,11 @@
 .checkbox-svg {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 0;
+  @media screen and (min-width: $laptop) {
+    left: 11px;
+  }
+
   transform: translateY(-50%);
 
   transition: transform 250ms $timing-function;

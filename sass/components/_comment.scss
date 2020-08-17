@@ -1,7 +1,16 @@
 .comment {
   resize: none;
 
-  width: 448px;
+  @media screen and (max-width: $mobile - 1px) {
+    width: 100%;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $laptop - 1px) {
+    width: 370px;
+  }
+  @media screen and (min-width: $laptop) {
+    width: 448px;
+  }
+
   height: 120px;
   padding: 12px 16px;
 
