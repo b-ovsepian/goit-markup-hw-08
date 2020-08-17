@@ -1223,6 +1223,10 @@ img {
   }
 }
 
+address {
+  font-style: normal;
+}
+
 @media screen and (max-width: 767px) {
   .address {
     margin-bottom: 60px;
