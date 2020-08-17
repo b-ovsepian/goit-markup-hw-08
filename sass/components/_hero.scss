@@ -31,7 +31,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url("../../images/hero/hero-laptop@2x.jpg");
+      url("../images/hero/hero-laptop@2x.jpg");
   }
 }
 @media screen and (min-width: $tablet) and (max-width: $laptop - 1px) {
@@ -42,7 +42,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url("../../images/hero/hero-tablet.jpg");
+      url("../images/hero/hero-tablet.jpg");
   }
 }
 @media screen and (min-width: $tablet) and (max-width: $laptop - 1px) and (min-device-pixel-ratio: 2),
@@ -54,7 +54,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url("../../images/hero/hero-tablet@2x.jpg");
+      url("../images/hero/hero-tablet@2x.jpg");
   }
 }
 @media screen and (max-width: $tablet - 1px) {
@@ -65,7 +65,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url("../../images/hero/hero-mobile.jpg");
+      url("../images/hero/hero-mobile.jpg");
   }
 }
 @media screen and (max-width: $tablet - 1px) and (min-device-pixel-ratio: 2),
@@ -77,7 +77,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url("../../images/hero/hero-mobile@2x.jpg");
+      url("../images/hero/hero-mobile@2x.jpg");
   }
 }
 .hero-actions {
