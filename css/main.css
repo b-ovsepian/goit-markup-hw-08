@@ -1409,8 +1409,6 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 581px;
-  min-width: 528px;
   padding: 40px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -1423,6 +1421,26 @@ address {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    width: 528px;
+  }
 }
 
 .modal-form {
@@ -1502,8 +1520,13 @@ address {
   margin-bottom: 28px;
 }
 
+@media screen and (max-width: 1199px) {
+  .form-field.mobile {
+    font-size: 12px;
+  }
+}
+
 .form-input {
-  width: 448px;
   height: 40px;
   padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1513,6 +1536,24 @@ address {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+@media screen and (max-width: 479px) {
+  .form-input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form-input {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-input {
+    width: 448px;
+  }
 }
 
 .form-label {
@@ -1539,7 +1580,6 @@ address {
 
 .comment {
   resize: none;
-  width: 448px;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1549,6 +1589,24 @@ address {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+@media screen and (max-width: 479px) {
+  .comment {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .comment {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comment {
+    width: 448px;
+  }
 }
 
 .comment-field {
@@ -1587,13 +1645,19 @@ address {
 .checkbox-svg {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-svg {
+    left: 11px;
+  }
 }
 
 .checkbox:checked + .checkbox-svg {
