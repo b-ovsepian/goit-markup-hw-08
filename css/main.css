@@ -389,17 +389,14 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media screen and (max-width: 767px) {
   .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -849,15 +846,8 @@ img {
   position: absolute;
   width: 100%;
   height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
@@ -884,6 +874,7 @@ img {
   min-width: 200px;
   text-align: center;
   cursor: pointer;
+  outline-color: #2196f3;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -911,9 +902,9 @@ img {
 }
 
 .secondary.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1111,23 +1102,25 @@ img {
 }
 
 .clients > .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 15px;
-  height: 90px;
   border: 1px solid #afb1b8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1199px) {
+  .clients > .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1165,7 +1158,7 @@ img {
 
 .clients-link {
   width: 100%;
-  height: 100%;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1179,6 +1172,7 @@ img {
 
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
   color: #ffffff;
   background-color: #2f303a;
   font-weight: 400;
@@ -1203,6 +1197,12 @@ img {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    width: calc(100% / 4);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .page-footer {
     text-align: center;
@@ -1217,6 +1217,9 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1226,6 +1229,14 @@ img {
         flex-wrap: wrap;
     padding-left: 75px;
     padding-right: 75px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1254,12 +1265,6 @@ address > .link:hover, address > .link:focus {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .address {
-    margin-right: 69px;
-  }
-}
-
 .join {
   margin-top: 0;
 }
@@ -1267,12 +1272,6 @@ address > .link:hover, address > .link:focus {
 @media screen and (max-width: 767px) {
   .join {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .join {
-    margin-left: auto;
   }
 }
 
@@ -1286,12 +1285,9 @@ address > .link:hover, address > .link:focus {
 }
 
 .join-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1323,14 +1319,10 @@ address > .link:hover, address > .link:focus {
   background-color: #2196f3;
 }
 
-.sign {
-  margin-left: auto;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sign {
     margin-top: 60px;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }
 
@@ -1340,6 +1332,18 @@ address > .link:hover, address > .link:focus {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sign > .title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .sign {
     text-align: center;
   }
 }
@@ -1386,13 +1390,13 @@ address > .link:hover, address > .link:focus {
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .sign-form input {
-    width: 450px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .sign-form input {
-    width: 358px;
+    width: 100%;
     margin-right: 12px;
   }
 }
@@ -1401,22 +1405,6 @@ address > .link:hover, address > .link:focus {
   .sign-form > .secondary.button {
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-.copyright {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-@media screen and (max-width: 1199px) {
-  .copyright {
-    display: none;
   }
 }
 
@@ -1822,12 +1810,16 @@ address > .link:hover, address > .link:focus {
           transform: translateY(0);
 }
 
+.thumb img {
+  width: 100%;
+}
+
 .description {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 100%);
-          transform: translate(-50%, 100%);
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 63px;
@@ -1848,8 +1840,8 @@ address > .link:hover, address > .link:focus {
 
 .portfolio > .element:hover .description,
 .portfolio > .element:focus .description {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .svg-menu {
