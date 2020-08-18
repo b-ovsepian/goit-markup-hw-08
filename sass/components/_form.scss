@@ -3,36 +3,30 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 28px;
-  @media screen and (max-width: $laptop - 1px) {
-    &.mobile {
+  &.sending {
+    text-align: start;
+    padding-left: 28px;
+    @media screen and (max-width: $laptop - 1px) {
       font-size: 12px;
     }
   }
 }
 .form-input {
-  @media screen and (max-width: $mobile - 1px) {
-    width: 100%;
-  }
-  @media screen and (min-width: $mobile) and (max-width: $laptop - 1px) {
-    width: 370px;
-  }
-  @media screen and (min-width: $laptop) {
-    width: 448px;
-  }
-
+  width: 100%;
   height: 40px;
 
   padding: 12px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline-color: $accent-color;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 
-  color: $primary-text-color;
+  color: $title-text-color;
 }
 .form-label {
   position: absolute;
@@ -44,8 +38,9 @@
   .form-input:hover + &,
   .form-input:focus + &,
   .form-input:not(:placeholder-shown) + & {
-    transform: translate(-25px, -35px);
+    top: 0;
 
+    transform: translate(-25px, calc(-100% - 4px));
     font-size: 12px;
     line-height: 1.16;
 

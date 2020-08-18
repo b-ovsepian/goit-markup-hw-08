@@ -3,10 +3,8 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
 
-  @media screen and(max-width: $mobile - 1px) {
-    width: 100%;
-  }
   @media screen and(min-width: $mobile) {
     width: $mobile;
   }

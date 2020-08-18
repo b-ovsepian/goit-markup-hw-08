@@ -9,10 +9,8 @@
   }
   @media screen and (min-width: $mobile) and (max-width: $laptop - 1px) {
     width: 450px;
-    min-height: 609px;
   }
   @media screen and (min-width: $laptop) {
-    min-height: 581px;
     width: 528px;
   }
 

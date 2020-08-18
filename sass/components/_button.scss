@@ -39,6 +39,10 @@
     background-color: $accent-color;
   }
 }
+.button.centered {
+  display: block;
+  margin: 0 auto;
+}
 .button.secondary {
   @extend .button;
   display: flex;

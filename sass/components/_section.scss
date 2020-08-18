@@ -14,17 +14,17 @@
     }
   }
 
-  &:nth-child(2) {
+  &.no-padding {
     @media screen and(min-width: $laptop) {
       padding-bottom: 0;
     }
   }
-  &:nth-child(3) {
+  &.no-display {
     @media screen and (max-width: $laptop - 1px) {
       display: none;
     }
   }
-  &:nth-child(4) {
+  &.alt-bg-color {
     background-color: $portfolio-bg-color;
   }
 }

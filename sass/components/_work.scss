@@ -1,14 +1,16 @@
 .work {
   display: flex;
   justify-content: space-between;
+  margin: -15px;
 }
 .work .item {
   position: relative;
-  width: 370px;
+  width: calc((100% - 90px) / 3);
+  margin: 15px;
 }
 .work .title {
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
