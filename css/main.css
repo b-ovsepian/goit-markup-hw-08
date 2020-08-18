@@ -283,12 +283,7 @@ summary {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-@media screen and (max-width: 479px) {
-  .container {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -585,6 +580,7 @@ img {
   padding: 0;
   margin: 0;
   fill: #757575;
+  vertical-align: middle;
 }
 
 .cont-nav .link:hover .cont-nav__icon,
@@ -601,14 +597,22 @@ img {
 }
 
 .hero {
-  position: relative;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -656,20 +660,6 @@ img {
   }
 }
 
-.hero-actions {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-@media screen and (max-width: 1199px) {
-  .hero-actions {
-    min-width: 360px;
-  }
-}
-
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -704,18 +694,18 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .section:nth-child(2) {
+  .section.no-padding {
     padding-bottom: 0;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .section:nth-child(3) {
+  .section.no-display {
     display: none;
   }
 }
 
-.section:nth-child(4) {
+.section.alt-bg-color {
   background-color: #f5f4fa;
 }
 
@@ -846,16 +836,18 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: -15px;
 }
 
 .work .item {
   position: relative;
-  width: 370px;
+  width: calc((100% - 90px) / 3);
+  margin: 15px;
 }
 
 .work .title {
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -911,6 +903,11 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
   background-color: #2196f3;
+}
+
+.button.centered {
+  display: block;
+  margin: 0 auto;
 }
 
 .secondary.button {
@@ -1123,6 +1120,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 15px;
   height: 90px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
@@ -1144,15 +1142,9 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .clients > .item {
-    margin: 15px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .clients > .item {
-    width: 170px;
+    width: calc((100% - 180px) / 6);
   }
 }
 
@@ -1169,6 +1161,20 @@ img {
 .clients > .item:hover .clients-icon,
 .clients > .item:focus .clients-icon {
   fill: #2196f3;
+}
+
+.clients-link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer {
@@ -1225,6 +1231,15 @@ img {
 
 address {
   font-style: normal;
+}
+
+address > .link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+address > .link:hover, address > .link:focus {
+  color: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
@@ -1432,13 +1447,11 @@ address {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
-    min-height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    min-height: 581px;
     width: 528px;
   }
 }
@@ -1520,40 +1533,29 @@ address {
   margin-bottom: 28px;
 }
 
+.form-field.sending {
+  text-align: start;
+  padding-left: 28px;
+}
+
 @media screen and (max-width: 1199px) {
-  .form-field.mobile {
+  .form-field.sending {
     font-size: 12px;
   }
 }
 
 .form-input {
+  width: 100%;
   height: 40px;
   padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline-color: #2196f3;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: #757575;
-}
-
-@media screen and (max-width: 479px) {
-  .form-input {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .form-input {
-    width: 370px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .form-input {
-    width: 448px;
-  }
+  color: #212121;
 }
 
 .form-label {
@@ -1571,8 +1573,9 @@ address {
 .form-input:hover + .form-label,
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
-  -webkit-transform: translate(-25px, -35px);
-          transform: translate(-25px, -35px);
+  top: 0;
+  -webkit-transform: translate(-25px, calc(-100% - 4px));
+          transform: translate(-25px, calc(-100% - 4px));
   font-size: 12px;
   line-height: 1.16;
   color: #2196f3;
@@ -1580,6 +1583,7 @@ address {
 
 .comment {
   resize: none;
+  width: 100%;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1588,25 +1592,8 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
+  outline-color: #2196f3;
   color: #757575;
-}
-
-@media screen and (max-width: 479px) {
-  .comment {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .comment {
-    width: 370px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .comment {
-    width: 448px;
-  }
 }
 
 .comment-field {
@@ -1628,8 +1615,9 @@ address {
 .comment:hover + .comment-label,
 .comment:focus + .comment-label,
 .comment:not(:placeholder-shown) + .comment-label {
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  top: 0;
+  -webkit-transform: translateY(calc(-100% - 4px));
+          transform: translateY(calc(-100% - 4px));
   font-size: 12px;
   line-height: 1.16;
   color: #2196f3;
@@ -1698,7 +1686,6 @@ address {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1843,7 +1830,11 @@ address {
           transform: translate(-50%, 100%);
   margin-top: 0;
   margin-bottom: 0;
-  width: 322px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.56;
