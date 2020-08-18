@@ -1,5 +1,7 @@
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
+
   @media screen and (max-width: $laptop - 1px) {
     padding-bottom: 60px;
   }
@@ -20,6 +22,11 @@
     text-decoration: none;
   }
 }
+.footer-box {
+  @media screen and(min-width: $laptop) {
+    width: calc(100% / 4);
+  }
+}
 .page-footer {
   @media screen and (max-width: $tablet - 1px) {
     text-align: center;
@@ -27,10 +34,14 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
   @media screen and (min-width: $tablet) and(max-width: $laptop - 1px) {
     flex-wrap: wrap;
     padding-left: 75px;
     padding-right: 75px;
+  }
+  @media screen and(min-width: $laptop) {
+    justify-content: space-between;
   }
 }

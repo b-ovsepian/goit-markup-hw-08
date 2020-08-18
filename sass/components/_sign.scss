@@ -1,8 +1,7 @@
 .sign {
-  margin-left: auto;
   @media screen and (min-width: $tablet) and (max-width: $laptop - 1px) {
     margin-top: 60px;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   > .title {

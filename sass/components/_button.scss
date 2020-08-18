@@ -16,6 +16,7 @@
   min-width: 200px;
   text-align: center;
   cursor: pointer;
+  outline-color: $accent-color;
 
   transition: color 250ms $timing-function,
     background-color 250ms $timing-function;
@@ -45,7 +46,7 @@
 }
 .button.secondary {
   @extend .button;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 10px 28px 10px 29px;
