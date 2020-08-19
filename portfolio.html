@@ -15,8 +15,8 @@
     <header class="header">
       <div class="page-header container">
         <nav class="nav">
-          <a href="./index.html" class="logo"
-            ><span class="element">Web</span> Studio</a
+          <a href="/index.html" class="logo"
+            ><span class="element">Web</span>Studio</a
           >
           <button
             type="button"
@@ -42,17 +42,17 @@
           </button>
           <div class="menu-container" data-menu>
             <ul class="site-nav list">
-              <li class="item">
+              <li class="item current">
                 <a href="./index.html" class="link">Студия</a>
               </li>
-              <li class="item current">
+              <li class="item">
                 <a href="./portfolio.html" class="link current">Портфолио</a>
               </li>
               <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
             <ul class="cont-nav list">
               <li class="item">
-                <a href="mailto:info@devstudio.com" class="link">
+                <a href="mailto:info@devstudio.com" class="cont-nav__link">
                   <svg class="cont-nav__icon" width="16" height="11.2">
                     <use href="./images/sprite.svg#iconmail"></use>
                   </svg>
@@ -60,7 +60,7 @@
                 </a>
               </li>
               <li class="item">
-                <a href="tel:+380961111111" class="link">
+                <a href="tel:+380961111111" class="cont-nav__link">
                   <svg class="cont-nav__icon" width="10" height="15">
                     <use href="./images/sprite.svg#iconphone"></use>
                   </svg>
@@ -480,82 +480,81 @@
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
-      <div class="container">
-        <div class="page-footer">
-          <div class="address">
-            <a href="/index.html" class="logo footer"
-              ><span class="element">Web</span> Studio</a
+      <div class="container page-footer">
+        <div class="footer-box centered">
+          <a href="/index.html" class="logo footer"
+            ><span class="element">Web</span>Studio</a
+          >
+          <address>
+            г. Киев, пр-т Леси Украинки, 26
+            <a href="mailto:info@devstudio.com" class="cont-nav__link link"
+              >info@devstudio.com</a
             >
-            <address>
-              г. Киев, пр-т Леси Украинки, 26
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-            </address>
-          </div>
-          <div class="join">
-            <p class="title"><b>присоединяйтесь</b></p>
-            <ul class="join-list">
-              <li class="join-item">
-                <a href="" class="join-link" aria-label="ссылка на instagram">
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/sprite.svg#iconinstagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-item">
-                <a
-                  href=""
-                  class="join-link twitter"
-                  aria-label="ссылка на twitter"
-                >
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/sprite.svg#icontwitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-item">
-                <a
-                  href=""
-                  class="join-link facebook"
-                  aria-label="ссылка на facebook"
-                >
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/sprite.svg#iconfacebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-item">
-                <a
-                  href=""
-                  class="join-link linkedin"
-                  aria-label="ссылка на linkedin"
-                >
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/sprite.svg#iconlinkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="sign">
-            <p class="title"><b>Подпишитесь на рассылку</b></p>
-            <form action="" class="sign-form">
-              <input
-                type="email"
-                placeholder="E-mail"
-                name="email"
-                required="required"
-                id="email"
-              />
-              <button class="button secondary" type="submit">
-                Подписаться
-              </button>
-            </form>
-          </div>
+            <a href="tel:+380991111111" class="cont-nav__link li"
+              >+38 099 111 11 11</a
+            >
+          </address>
         </div>
-        <p class="copyright">&#169;2020 | Developed by GoIT Students</p>
+        <div class="footer-box">
+          <p class="title"><b>присоединяйтесь</b></p>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="" class="social-link" aria-label="ссылка на instagram">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/sprite.svg#iconinstagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href=""
+                class="social-link twitter"
+                aria-label="ссылка на twitter"
+              >
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icontwitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href=""
+                class="social-link facebook"
+                aria-label="ссылка на facebook"
+              >
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/sprite.svg#iconfacebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href=""
+                class="social-link linkedin"
+                aria-label="ссылка на linkedin"
+              >
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/sprite.svg#iconlinkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sign">
+          <p class="title"><b>Подпишитесь на рассылку</b></p>
+          <form action="#" class="sign-form" id="sign-form">
+            <input
+              type="email"
+              placeholder="E-mail"
+              name="email"
+              required="required"
+              id="sign-email"
+            />
+            <button class="button secondary" type="submit">
+              Подписаться
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <script>
