@@ -1,3 +1,8 @@
+.header {
+  position: relative;
+
+  border-bottom: 1px solid #ececec;
+}
 .page-header {
   @media screen and(max-width: $tablet - 1px) {
     display: flex;

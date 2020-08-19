@@ -5,9 +5,16 @@
   padding: 0;
   margin: auto;
 
-  &:not(:last-child) {
-    margin-right: 10px;
+  .footer & {
+    margin: 0;
+    justify-content: flex-start;
+    @media screen and(max-width: $tablet - 1px) {
+      justify-content: center;
+    }
   }
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 .social-link {
   display: inline-flex;
@@ -19,6 +26,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
+
+  .footer & {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
 
   transition: border-radius 250ms $timing-function,
     background-color 250ms $timing-function;

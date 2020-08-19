@@ -27,3 +27,11 @@
     flex-grow: 1;
   }
 }
+// svg-menu
+.svg-menu {
+  @media screen and (min-width: $laptop) {
+    display: none;
+  }
+  fill: $title-text-color;
+  transition: fill 250ms $timing-function;
+}

@@ -17,14 +17,25 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-  .link {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-  }
 }
 .footer-box {
+  .title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: $tablet - 1px) {
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: $tablet) and (max-width: $laptop - 1px) {
+    width: calc((100% - 30px) / 2);
+  }
   @media screen and(min-width: $laptop) {
-    width: calc(100% / 4);
+    width: calc((100% - 90px) / 4);
+  }
+}
+.footer-box.centered {
+  @media screen and (max-width: $laptop - 1px) {
+    text-align: center;
   }
 }
 .page-footer {
@@ -38,10 +49,8 @@
   }
   @media screen and (min-width: $tablet) and(max-width: $laptop - 1px) {
     flex-wrap: wrap;
-    padding-left: 75px;
-    padding-right: 75px;
   }
-  @media screen and(min-width: $laptop) {
-    justify-content: space-between;
-  }
+}
+address {
+  font-style: normal;
 }
