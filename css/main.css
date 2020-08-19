@@ -1322,7 +1322,8 @@ address > .link:hover, address > .link:focus {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sign {
     margin-top: 60px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
