@@ -4,11 +4,6 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and(min-width: $laptop) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1170px;
-  }
   .link {
     text-decoration: none;
   }
