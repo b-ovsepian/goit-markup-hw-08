@@ -615,8 +615,7 @@ img {
 }
 
 .cont-nav__icon {
-  padding: 0;
-  margin: 0;
+  margin-right: 3px;
   fill: #757575;
   vertical-align: middle;
 }
@@ -1420,7 +1419,11 @@ address p {
 
 @media screen and (max-width: 479px) {
   .modal {
-    width: calc(100% - 30px);
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
@@ -1647,14 +1650,6 @@ address p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1170px;
   }
 }
 
