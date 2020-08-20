@@ -32,8 +32,6 @@
   @media screen and(min-width: $laptop) {
     width: calc((100% - 90px) / 4);
   }
-}
-.footer-box.centered {
   @media screen and (max-width: $laptop - 1px) {
     text-align: center;
   }

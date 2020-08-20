@@ -8,7 +8,7 @@
   .footer & {
     margin: 0;
     justify-content: flex-start;
-    @media screen and(max-width: $tablet - 1px) {
+    @media screen and(max-width: $laptop - 1px) {
       justify-content: center;
     }
   }
