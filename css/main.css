@@ -1079,7 +1079,7 @@ img {
           justify-content: flex-start;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer .social-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1269,7 +1269,7 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .footer-box.centered {
+  .footer-box {
     text-align: center;
   }
 }
